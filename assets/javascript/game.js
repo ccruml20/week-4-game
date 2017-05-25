@@ -1,12 +1,13 @@
 // create variables
 var targetNumber;
 var crystalTotal = [];
-var blueCrystal = [];
-var yellowCrystal = [];
-var purpleCrystal = [];
-var greenCrystal = [];
+var blueCrystal = [1, 3,];
+var yellowCrystal = [3,7, 12, 19];
+var purpleCrystal = [5, 8, 15, 19];
+var greenCrystal = [1,6,10,12,18];
 var minNumber = 19;
 var maxNumber = 120,
+
 
 // create random number from 19-120
 
@@ -17,12 +18,6 @@ function randomNumberFromRange(min,max)
 }
 console.log(randomNumber);
 
-
-
-
-
-
-
 var self = {
 
 	targetNumber: function() {
@@ -30,22 +25,36 @@ var self = {
 	},
 
 	crystalTotal: function(){
-      $(".divClass").on("click", function () {
-      	alert("yeah it works");
-      });
-	}
+		$(".divClass").on("click", function () {
+			// alert("yeah it works");
+			$("divClass").css({"background-color": "yellow", "font-size": "200%"})
+
+
+		});
+	},
+
+	crystalPick: function(){
+		var crystalPick = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
+		counter = 0;
+		$('.divClass').click(function () {
+			randomPick = Math.floor(Math.random() * crystalPick.length);
+			console.log(randomPick);
+		});
+		
+	},
 };
 
-    document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
 
-        self.targetNumber()
-        self.crystalTotal()
+	self.targetNumber()
+	self.crystalTotal()
+	self.crystalPick()
 
 
         // playerGuess = document.getElementById("userGuess");
         // self.updateGuess()
 
- 
+
 
     })
 
