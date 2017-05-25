@@ -1,0 +1,31 @@
+#charDiv {
+    position: absolute;
+    width: 28%;
+    bottom: 55px;
+    left: 431px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+#bossDiv {
+    position: absolute;
+    width: 28%;
+    bottom: 53px;
+    left: 131px;
+}
+#bossMoney {
+    position: absolute;
+    width: 100%;
+    bottom: 53px;
+    left: 30px;
+}
+#backGround {
+	position: relative;
+}
+#monsterTwo {
+	 -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+#statDiv {
+	position: relative;
+	top: 40px;
+}
