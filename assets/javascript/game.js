@@ -6,7 +6,8 @@ var yellowCrystal = [3,7, 12, 19];
 var purpleCrystal = [5, 8, 15, 19];
 var greenCrystal = [1,6,10,12,18];
 var minNumber = 19;
-var maxNumber = 120,
+var maxNumber = 120;
+var firstNumber = [];
 
 
 // create random number from 19-120
@@ -19,6 +20,10 @@ function randomNumberFromRange(min,max)
 console.log(randomNumber);
 
 var self = {
+
+	initGame: function() {
+	
+	},
 
 	targetNumber: function() {
 		$(".rentAmount").html(randomNumber);
@@ -39,8 +44,13 @@ var self = {
 		$('.divClass').click(function () {
 			randomPick = Math.floor(Math.random() * crystalPick.length);
 			console.log(randomPick);
+			firstNumber.push(randomPick); // add 2 more elements to ar
+			console.log(firstNumber); // ["one", "two", "three", "four", "five", "six"]
+			// randomPick = firstNumber;
+			$(".firstNumber").html(randomPick);
+			randomPick = parseInt(randomPick);
 		});
-		
+
 	},
 };
 
@@ -49,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	self.targetNumber()
 	self.crystalTotal()
 	self.crystalPick()
+	self.initGame()
 
 
         // playerGuess = document.getElementById("userGuess");
