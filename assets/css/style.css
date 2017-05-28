@@ -29,3 +29,20 @@
 	position: relative;
 	top: 20px;
 }
+
+.crystalStyle {
+    position: relative;
+    bottom: 55px;
+    left: 20px;
+}
+
+.divClass2 {
+    background-color: #c4ead9;
+    width: 617px;
+    left: 10px;
+}
+.footerStyle {
+    background-color: #beab7e;
+    position: relative;
+    bottom: 50px;
+}
