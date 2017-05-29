@@ -22,8 +22,11 @@
 	position: relative;
 }
 #monsterTwo {
+    position: relative;
 	-webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    width: 70%;
+    left: 30px;
 }
 #statDiv {
 	position: relative;
@@ -37,12 +40,15 @@
 }
 
 .divClass2 {
-    background-color: #c4ead9;
-    width: 617px;
-    left: 10px;
+    background-color: #d0ffe9;
+    width: 62.6%;
+    left: 9px;
 }
-.footerStyle {
-    background-color: #beab7e;
-    position: relative;
-    bottom: 50px;
+
+#footerStyle {
+    border-top: #c4ead9;
+}
+
+.img1 {
+    width: 50%;
 }
