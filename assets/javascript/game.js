@@ -12,18 +12,24 @@ var picArray = [];
 var sum = 0;
 var wins = 0;
 var loses = 0;
+var randomNumber;
 
 
-randomNumber = randomNumberFromRange(minNumber, maxNumber);
-function randomNumberFromRange(min,max)
-{
-	return Math.floor(Math.random()*(max-min+1)+min);
-}
-console.log(randomNumber);
+
 
 var self = {
 
 	initGame: function() {
+		firstNumber = [];
+		sum = 0;
+		randomNumber = randomNumberFromRange(minNumber, maxNumber);
+		function randomNumberFromRange(min,max)
+		{
+			return Math.floor(Math.random()*(max-min+1)+min);
+		};
+		console.log(randomNumber);
+		$(".rentAmount").html(randomNumber);
+		$(".firstNumber").html(sum);
 
 	},
 
@@ -45,7 +51,7 @@ var self = {
 },
 
 targetNumber: function() {
-	$(".rentAmount").html(randomNumber);
+
 },
 
 crystalTotal: function(){
@@ -54,29 +60,29 @@ crystalTotal: function(){
 	});
 },
 crystalPick: function(){
+	sum = 0;
 	var crystalPick = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
 	counter = 0;
 	$('.divClass').click(function () {
 		randomPick = Math.floor(Math.random() * crystalPick.length);
 		console.log(randomPick);
 		firstNumber.push(randomPick);
-		console.log(firstNumber);
-		randomPick = firstNumber;
+		console.log("yeah" + firstNumber);
+		// randomPick = firstNumber;
 		sum = firstNumber.reduce((a, b) => a + b, 0);
 		console.log(sum); 
 		$(".firstNumber").html(sum);
 		if (sum === randomNumber){
 			wins++;
-			self.charPick();
+			self.initGame();
 			console.log("you have" + "" + wins);
 			$(".updateWins").html(wins);
 		}
 		if (sum > randomNumber){
 			loses++;
-			self.charPick();
+			self.initGame();
 			$(".updateLoses").html(loses);
 			$("#img1").attr("src", "assets/images/monster6.png")
-			// location.reload();
 		}
 	});
 },

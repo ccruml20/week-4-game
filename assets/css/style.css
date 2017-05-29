@@ -25,7 +25,7 @@
     position: relative;
 	-webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    width: 70%;
+    width: 55%;
     left: 30px;
 }
 #statDiv {
