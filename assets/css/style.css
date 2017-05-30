@@ -25,12 +25,10 @@
     position: relative;
 	-webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    width: 55%;
     left: 30px;
 }
 #statDiv {
 	position: relative;
-	top: 20px;
 }
 
 .crystalStyle {
@@ -40,7 +38,8 @@
 }
 
 .divClass2 {
-    background-color: #d0ffe9;
+/*    background-color: #d0ffe9;*/
+    position: relative;
     width: 62.6%;
     left: 9px;
 }
@@ -50,5 +49,4 @@
 }
 
 .img1 {
-    width: 50%;
 }
