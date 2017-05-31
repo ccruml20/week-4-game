@@ -1,3 +1,28 @@
+/* copy & paste this CSS code into your project */
+body {
+  min-height: 100vh;
+  background-image: 
+    repeating-linear-gradient(305deg, 
+      rgba(57,141,182, 0) 0,
+      #0b1212 25vmax,
+      #0b1212 calc(25vmax - 5px),
+      #0b1212 25vmax
+    ),
+    repeating-linear-gradient(220deg, 
+      rgba(57,141,182, 0) 0,
+      #3f0042 75vmax,
+      #3f0042 calc(75vmax - 5px),
+      #3f0042 75vmax
+    );
+
+  background-color: #398db6;
+  background-size: 100% 100%;
+}
+
+.container {
+    background-color: #fff;
+}
+
 #charDiv {
     position: absolute;
     width: 28%;
