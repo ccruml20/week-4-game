@@ -1,22 +1,10 @@
 /* copy & paste this CSS code into your project */
-body {
-  min-height: 100vh;
-  background-image: 
-    repeating-linear-gradient(305deg, 
-      rgba(57,141,182, 0) 0,
-      #0b1212 25vmax,
-      #0b1212 calc(25vmax - 5px),
-      #0b1212 25vmax
-    ),
-    repeating-linear-gradient(220deg, 
-      rgba(57,141,182, 0) 0,
-      #3f0042 75vmax,
-      #3f0042 calc(75vmax - 5px),
-      #3f0042 75vmax
-    );
 
-  background-color: #398db6;
-  background-size: 100% 100%;
+body {
+    min-height: 100vh;
+    background-image: repeating-linear-gradient(305deg, rgba(57, 141, 182, 0) 0, #0b1212 25vmax, #0b1212 calc(25vmax - 5px), #0b1212 25vmax), repeating-linear-gradient(220deg, rgba(57, 141, 182, 0) 0, #3f0042 75vmax, #3f0042 calc(75vmax - 5px), #3f0042 75vmax);
+    background-color: #398db6;
+    background-size: 100% 100%;
 }
 
 .container {
@@ -25,53 +13,61 @@ body {
 
 #charDiv {
     position: absolute;
-    width: 28%;
+    width: 38%;
     bottom: 55px;
     left: 431px;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
+
 #bossDiv {
     position: absolute;
-    width: 28%;
+    width: 43%;
     bottom: 53px;
-    left: 131px;
+    left: 47px;
 }
+
 #bossMoney {
     position: absolute;
     width: 100%;
     bottom: 53px;
     left: 30px;
 }
+
 #backGround {
-	position: relative;
+    position: relative;
 }
+
 #monsterTwo {
     position: relative;
-	-webkit-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    left: 30px;
+    right: 10px;
+    width: 84%;
+
 }
+
 #statDiv {
-	position: relative;
+    position: relative;
 }
 
 .crystalStyle {
+    border-top: color: red;
     position: relative;
-    bottom: 55px;
+    bottom: 100px;
     left: 20px;
 }
 
 .divClass2 {
-/*    background-color: #d0ffe9;*/
+    /* background-color: #d0ffe9; */
     position: relative;
     width: 62.6%;
     left: 9px;
+    top: 101px;
 }
 
 #footerStyle {
     border-top: #c4ead9;
 }
 
-.img1 {
-}
+.img1 {}

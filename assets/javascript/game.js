@@ -26,6 +26,7 @@ var self = {
         console.log(randomNumber);
         $(".rentAmount").html("$ " + randomNumber);
         $(".firstNumber").html(sum);
+
         self.charPick();
     },
     charPick: function() {
@@ -34,7 +35,7 @@ var self = {
         ];
         var arrayLength = picArray.length;
         for (var i = 0; i < arrayLength; i++) {
-            console.log("pick test" + picArray); 
+            console.log("pick test" + picArray);
         }
     },
     crystalTotal: function() {
@@ -64,6 +65,9 @@ var self = {
                 loses++;
                 self.initGame();
                 $(".updateLoses").html(loses);
+                $('#charDiv2').attr('src', 'assets/images/monster6.png');
+                $('#img1').attr('src', 'assets/images/monster6.png');
+                $("#img1").css("width", "145px" );
             }
         });
     },
